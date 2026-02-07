@@ -355,6 +355,7 @@
   .intro-card p { margin:0; color:var(--muted); font-size:clamp(18px,2.5vw,22px); line-height:1.7; }
   /* 二维码样式：居中显示 */
   .qr-img-small { width:220px; max-width:80%; border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,0.3); display:block; margin:10px auto; }
+  .qr-img-big { width:300px; max-width:80%; border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,0.3); display:block; margin:10px auto; }
   @media (max-width:800px){ .grid-2col { grid-template-columns:1fr; } #section-zh, #section-en { grid-template-columns:1fr; } }
 </style>
 
@@ -370,21 +371,27 @@
     <h2 data-zh="🖼️ 关于 ZeekHub" data-en="🖼️ About ZeekHub">🖼️ 关于 ZeekHub</h2>
     <p data-zh="<br>
           专注分享 <strong>高质量 · 高分辨率 · 氛围感壁纸</strong>。<br>
-          小红书同名账号每日更新。<br><br>
+          小红书同名账号每日更新。<br>
+          每张都是超4k分辨率，适配各类屏幕。<br><br>
           
-          <strong>💻 浏览体验：</strong><br>
-          电脑端可用 <strong>Ctrl + 鼠标滚轮</strong> 缩放页面。<br>
-          鼠标悬停壁纸可查看 <strong>三位数编号</strong>。<br><br>
-          无需繁琐网盘，直接通过邮件发送编号即可获取高清原图。<br><br>" 
+          无需繁琐网盘，直接通过邮件发送编号即可获取高清原图。<br><br>
+
+          <strong>📋 规则：</strong><br>
+          · 🆓 <strong>新发布 72h 内：免费</strong><br>
+          · 📦 <strong>往期壁纸：1 点 / 套</strong><br>
+          · 🎁 <strong>新人福利：72小时 VIP 体验权</strong><br><br>"
+
        data-en="<br>
           Focused on sharing <strong>high-quality · high-res · atmospheric wallpapers</strong>.<br>
           Daily updates on Xiaohongshu (ZeekHub).<br><br>
           
-          <strong>💻 Browsing:</strong><br>
-          Use <strong>Ctrl + Scroll</strong> to zoom on PC.<br>
-          Hover over wallpapers to see the <strong>3-digit ID</strong>.<br><br>
-          No cloud apps needed. Simply email the ID to get the original file.<br><br>">
+          No cloud apps needed. Simply email the ID to get the original file.<br><br>
+          <strong>📋 Rules:</strong><br>
+          · 🆓 <strong>New (<72h): Free</strong><br>
+          · 📦 <strong>Past: 1 Point / Set</strong><br>
+          · 🎁 <strong>New User: 72-hour VIP Trial</strong><br><br>">
     </p>
+
   </section>
 
   <!-- =========================
@@ -392,35 +399,30 @@
        ========================= -->
   <section class="intro-card">
     <h2 data-zh="🎨 如何获取壁纸" data-en="🎨 How to Get">🎨 如何获取壁纸</h2>
-    <p data-zh="<br>
-          拒绝套路，邮件直发。<br><br>
 
-          <strong>📋 规则：</strong><br>
-          · 🆓 <strong>新发布 72h 内：免费</strong><br>
-          · 📦 <strong>往期壁纸：1 点 / 套</strong><br>
-          · 🎁 <strong>新人福利：72小时 VIP 体验权</strong><br><br>
+    <p data-zh="<br>
+
 
           <strong>📧 流程：</strong><br>
-          1. 选好壁纸编号（如 <strong>365</strong>）<br>
+          1. 选好壁纸编号（如 <strong>249</strong>）<br>
           2. 邮件<strong>主题</strong>填写该编号<br>
           3. 发送至 <strong>zeekhub@qq.com</strong><br>
-          4. 等待系统自动回信附件<br>
+          4. 等待系统实时自动处理回信附件<br>
           ⚠️ 每封邮件仅限一个编号<br><br>" 
        data-en="<br>
-          Direct email delivery.<br><br>
 
-          <strong>📋 Rules:</strong><br>
-          · 🆓 <strong>New (<72h): Free</strong><br>
-          · 📦 <strong>Past: 1 Point / Set</strong><br>
-          · 🎁 <strong>New User: 72-hour VIP Trial</strong><br><br>
 
           <strong>📧 Process:</strong><br>
-          1. Pick an ID (e.g., <strong>365</strong>)<br>
+          1. Pick an ID (e.g., <strong>249</strong>)<br>
           2. Put the ID in the email <strong>Subject</strong><br>
           3. Send to <strong>zeekhub@qq.com</strong><br>
-          4. Wait for auto-reply with attachment<br>
+          4. Wait for auto-reply with attachment in one minute<br>
           ⚠️ One ID per email.<br><br>">
     </p>
+    <!-- 仅保留微信二维码，居中显示 -->
+    <div style="text-align:center; margin-top:0px;">
+      <img class="qr-img-big" src="instruction.jpg" alt="取图指导"> 
+    </div>
   </section>
 
   <!-- =========================
